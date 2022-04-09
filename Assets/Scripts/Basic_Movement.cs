@@ -30,6 +30,9 @@ public class Basic_Movement : MonoBehaviour
     [SerializeField]
     private AudioSource jumpSFX;
 
+    [SerializeField]
+    private AudioSource WalkingSFX;
+
 
     private float horizontalInput;
     private bool facingRight = true;
@@ -71,7 +74,8 @@ public class Basic_Movement : MonoBehaviour
         float horizontalMovement = horizontalInput * moveSpeed;
         playerRigidBody.velocity = new Vector2(horizontalMovement, playerRigidBody.velocity.y);
 
-//        Debug.Log(isGrounded());
+
+        //        Debug.Log(isGrounded());
         if (isJump && isGrounded())
         {
             playerRigidBody.AddForce(new Vector2(0, jumpForce));

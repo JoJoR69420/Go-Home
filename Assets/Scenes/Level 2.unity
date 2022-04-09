@@ -304,6 +304,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 564893139579341705, guid: 13213953a0b13cf469af0221e7cb0b63, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 9a7a2d7c3f0efa7408e14bd09744808d, type: 3}
     - target: {fileID: 564893139579341808, guid: 13213953a0b13cf469af0221e7cb0b63, type: 3}
       propertyPath: m_Name
       value: Player (1)
@@ -4192,6 +4196,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   HealthAdd: 1
   Playerhealth: {fileID: 220832278}
+  addHPSFX: {fileID: 0}
 --- !u!212 &1980816874
 SpriteRenderer:
   m_ObjectHideFlags: 0
